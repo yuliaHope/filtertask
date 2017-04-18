@@ -11,30 +11,30 @@ You need to choose one or more filters and put them to `README.md` file in your 
 
 Examples of filters:
 * Color channels modification
- * Filters that modify (add/remove) color channels in images
- * Filters that convert color images to black and white images
- * Filters that binarize images based on different thresholds
- * Filters that change pixel brightness with bijective functions
+  * Filters that modify (add/remove) color channels in images
+  * Filters that convert color images to black and white images
+  * Filters that binarize images based on different thresholds
+  * Filters that change pixel brightness with bijective functions
 * Linear filters
- * Low pass filters (blur)
- * High pass filters (sharpening)
+  * Low pass filters (blur)
+  * High pass filters (sharpening)
 * Non-linear filters
- * Median filter
- * Max (morphology dilation) filter
- * Min (morphology erosion) filter
+  * Median filter
+  * Max (morphology dilation) filter
+  * Min (morphology erosion) filter
 * Histogram processing
- * Histogram equalization
- * Histogram building (not actually a filter, but you can choose it)
+  * Histogram equalization
+  * Histogram building *(not actually a filter, but you can choose it)*
  
  
 ### Additional tasks
 There are three additional tasks:
 * Implement 3 or more different filters
- * You should choose several filters of different kinds, for example, you can't implement Median, Dilation and Erosion non-linear filters because their implementations are too similar. Filters should be chosen in CLI, GUI or passed via parameters
+  * You should choose several filters of different kinds, for example, you can't implement Median, Dilation and Erosion non-linear filters because their implementations are too similar. Filters should be chosen in CLI, GUI or passed via parameters
 * Implement filters as GPU kernels (subprograms)
- * The part that applies the filter should be written in `CUDA` language or some close alternative, and it should run on real GPU device or on its simulation
+  * The part that applies the filter should be written in `CUDA` language or some close low-level alternative (`OpenCL` kernels, shaders) with explicit CPU and GPU code blocks, explicit GPU memory management and explicit GPU-part execution, and it should run on real GPU device or on its simulation. 
 * Add GUI to your task
- * GUI should allow you to choose the input and output images, filters (if you implemented more than one filter), also it should show the progress and stats of filter application
+  * GUI should allow you to choose the input and output images, filters (if you implemented more than one filter), also it should show the progress and stats of filter application
 
 ### Github repository
 [Github repository](https://github.com/Andrew414/filtertask) consists of one main [`README.md`](https://github.com/Andrew414/filtertask/blob/master/README.md) page and fourteen personal folders. You need to fork the repository and make changes in your local folder only. All local folders contain an empty `.gitignore` file that you need to fill in with your project's temp files. Also, for this task, you need to create your own `README.md` and list the selected filters in it. The rest of the files should be your code and project files.
