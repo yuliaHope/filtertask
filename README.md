@@ -32,7 +32,7 @@ There are three additional tasks:
 * Implement 3 or more different filters
   * You should choose several filters of different kinds, for example, you can't implement Median, Dilation and Erosion non-linear filters because their implementations are too similar. Filters should be chosen in CLI, GUI or passed via parameters
 * Implement filters as GPU kernels (subprograms)
-  * The part that applies the filter should be written in `CUDA` language or some close low-level alternative (`OpenCL` kernels, shaders) with explicit CPU and GPU code blocks, explicit GPU memory management and explicit GPU-part execution, and it should run on real GPU device or on its simulation. 
+  * The part that applies the filter should be written in `CUDA` language or some close low-level alternative (`OpenCL` kernels, shaders) with explicit CPU and GPU code blocks, explicit GPU memory management and explicit GPU-part execution, and it should run on real GPU device or on its simulation. Use of some high-level wrappers for GPGPU is not allowed for this task
 * Add GUI to your task
   * GUI should allow you to choose the input and output images, filters (if you implemented more than one filter), also it should show the progress and stats of filter application
 
